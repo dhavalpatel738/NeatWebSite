@@ -11,12 +11,9 @@
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="assets/css/body-font.css" rel="stylesheet">
 
     <style type="text/css">
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
 
         .jumbotron {
             background-image: url('assets/images/jumbotron.jpg');
@@ -47,9 +44,12 @@
     <title>Neat Ceramic LLP | Sanitary manufacturer</title>
   </head>
   <body>
+    <!--  IMPORT CONFIG FILE -->
+      <?php include 'config.php'; ?>
+
     <!-- header navbar-->
       <?php
-          echo file_get_contents('assets/php/header-navbar.php');
+          echo file_get_contents(HEADER_NAVBAR);
        ?>
 
     <!-- Jumbotron -->
@@ -124,7 +124,7 @@
     </div>
 
     <?php
-      echo file_get_contents('assets/php/footer-navbar.php');
+      echo file_get_contents(FOOTER_NAVBAR);
     ?>
 
 
