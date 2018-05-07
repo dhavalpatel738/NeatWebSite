@@ -1,0 +1,17 @@
+.navbar-background {
+  background-color: black !important;
+}
+
+
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 70px;
+  width: 180px;
+  max-height: 100px;
+  position: relative;
+  left: 15px;
+}
